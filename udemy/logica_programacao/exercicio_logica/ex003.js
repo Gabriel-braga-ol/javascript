@@ -1,10 +1,16 @@
 function fizzBuzz(i) {
-    if (i % 3 === 0) {
-        return 'Fizz' || i
+    if (i % 3 === 0 && i % 5 === 0) {
+        return 'FizzBuzz'
+    } else if (i % 3 === 0) {
+        return 'Fizz'
     } else if (i % 5 === 0) {
-        return 'Buzz' || i
+        return 'Buzz'
+    } else {
+        return i
     }
   
 }
 
-console.log(fizzBuzz(1))    
+for (let i=0; i <= 100; i++) {
+    console.log(i, fizzBuzz(i))
+}
