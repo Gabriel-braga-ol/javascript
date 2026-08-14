@@ -27,3 +27,21 @@ console.log(impar_par(11))
 console.log(impar_par(25))
 console.log(impar_par(30))
 
+const souUmDado = function () { // função anônima
+    console.log('sou um dado')
+}
+souUmDado()
+
+const functionArrow = () => {
+    console.log('oi')
+}
+
+functionArrow()
+
+const obj = {
+    falar() {
+        console.log('estou falando')
+    }
+}
+
+obj.falar()
