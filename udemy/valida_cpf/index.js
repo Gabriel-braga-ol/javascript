@@ -1,6 +1,6 @@
 //705.484.450-52 070.987.720-03
 
-function validarCPF(cpf) {
+function ValidarCPF(cpf) {
     const cpfLimpo = cpf.replace(/\D+/g, '') // pega tudo que não for número e substotuí por nada
     const array = cpfLimpo.split('').map(Number)
 
@@ -42,5 +42,5 @@ function validarCPF(cpf) {
     
 }
 
-console.log(validarCPF('705.484.450-52'))
-console.log(validarCPF("070.987.720-03"));
+console.log(ValidarCPF('705.484.450-52'))
+console.log(ValidarCPF("070.987.720-03"));
